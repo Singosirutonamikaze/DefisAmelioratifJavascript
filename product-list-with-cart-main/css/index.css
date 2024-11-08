@@ -1,4 +1,12 @@
-/*Variable couleurs*/
+/* Définition de la police pour le texte */
+.red-hat-text {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Variables couleurs définies pour l'utilisation dans toute la feuille de style */
 :root {
     --red: hsl(14, 86%, 42%);
     --green: hsl(159, 69%, 38%);
@@ -8,4 +16,211 @@
     --rose-400: hsl(7, 20%, 60%);
     --rose-500: hsl(12, 20%, 44%);
     --rose-900: hsl(14, 65%, 9%);
+}
+
+/* Styles de base pour tous les éléments avec police et marges */
+* {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+/* Styles du corps du document, centrage horizontal */
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Conteneur principal avec flexbox et fond de couleur */
+.container,
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 6%;
+    margin-top: 1%;
+    background-color: var(--rose-100);
+}
+
+/* Padding pour le conteneur principal */
+.container {
+    padding: 1% 3%;
+}
+
+/* Collection de plats utilisant flexbox */
+.platCollection {
+    display: flex;
+    width: 75%;
+    border-radius: 5px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Conteneur flexible pour éléments alignés en ligne */
+.flex-content {
+    display: flex;
+    width: 100%;
+    padding: 0% 0% 3% 0%;
+    margin-bottom: 4%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 350px;
+}
+
+/* Dimensions et styles pour les images des plats */
+.image-content {
+    height: 350px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0% 2%;
+    flex-direction: column;
+    display: flex;
+}
+
+/* Styles pour le panier */
+.cart {
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: var(--rose-50);
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    text-align: left;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+/* Styles pour chaque plat avec flexbox centré */
+.plat {
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style pour les plats actifs avec bordure rouge */
+.plat.active {
+    border: 4px solid var(--red);
+}
+
+/* Styles pour le titre de la page */
+h1 {
+    font-size: 25px;
+    margin: 1% 3%;
+}
+
+/* Styles pour les images avec arrondi */
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Styles pour les boutons avec taille et couleur */
+button {
+    width: 150px;
+    background-color: var(--rose-50);
+    height: 40px;
+    border: 2px solid var(--red);
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-weight: 700;
+    color: var(--rose-900);
+}
+
+/* Style pour les boutons actifs avec fond rouge */
+button.active {
+    background-color: var(--red);
+}
+
+h2 {
+    font-size: 23px;
+}
+
+p {
+    margin-top: 10%;
+    font-size: 16px;
+}
+
+.price {
+    color: var(--red);
+    font-weight: bold;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+button span {
+    color: var(--rose-50);
+    justify-content: space-between;
+    width: 50px;
+}
+
+/*Style des différents listes*/
+ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    border-bottom: 1px solid var(--rose-100);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2%;
+    height: 50px;
+}
+
+button .AddMinus{
+    border: 1px solid var(--rose-50);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart h3{
+    font-size: 25px;
+    color: var(--red);
+    margin: 2%;
+    text-align: left;
+    width: 100%;
+}
+
+.cart img{
+    width: 170px;
+}
+
+.default{
+    height: 93%;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+.default p{
+    color: var(--rose-500);
+    font-weight: 700;
 }

@@ -1,0 +1,101 @@
+/* Styles de base déjà fournis dans le fichier principal */
+
+@media (max-width: 992px) {
+    /* Pour les tablettes */
+    .container {
+        flex-direction: column;
+        gap: 5%;
+        padding: 3% 5%;
+    }
+    .platCollection {
+        width: 100%;
+    }
+    .flex-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    .image-content {
+        width: 90%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    .cart {
+        width: 100%;
+        margin-top: 5%;
+    }
+    button {
+        width: 130px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Pour les smartphones en paysage */
+    .container {
+        flex-direction: column;
+        gap: 4%;
+    }
+    .platCollection {
+        width: 100%;
+    }
+    .flex-content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    .image-content {
+        width: 80%;
+        height: auto;
+        margin-bottom: 4%;
+    }
+    .cart {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Pour les smartphones en portrait */
+    .container {
+        flex-direction: column;
+        padding: 5% 3%;
+        gap: 3%;
+    }
+    .platCollection {
+        width: 100%;
+    }
+    .flex-content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .image-content {
+        width: 100%;
+        height: auto;
+    }
+    button {
+        width: 120px;
+        height: 35px;
+        margin-top: 5%;
+    }
+    .cart {
+        width: 100%;
+        margin-top: 8%;
+    }
+}
+
+/* Ajustement des tailles de texte */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+}

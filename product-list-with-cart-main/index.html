@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Balise d'en-tête contenant les métadonnées du document -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Spécifie l'encodage des caractères en UTF-8 pour une meilleure compatibilité des caractères -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configure l'affichage du site pour s'adapter aux différents appareils, en particulier pour mobile -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+  <!-- Lien vers une icône de site (favicon) qui apparaîtra dans l'onglet du navigateur -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Frontend Mentor | Product list with cart</title>
+  <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
+
+  <link rel="stylesheet" href="../product-list-with-cart-main/css/index.css">
+  <link rel="stylesheet" href="../product-list-with-cart-main/css/responsive.css">
+  <!-- Lien vers le fichier CSS pour le style et la mise en page principale du site -->
+
+  <script src="../product-list-with-cart-main/js/app.js"></script>
+  <!-- Lien vers le fichier JavaScript pour le comportement interactif du site -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <!-- Lien vers la police de caractères importée depuis Google Fonts -->
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      display: none;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <!-- Style en ligne pour la section "attribution" (les crédits), incluant la taille du texte et la couleur des liens -->
 </head>
+
 <body>
   <div class="container">
-    <h1>Desserts</h1>
+    <!-- Conteneur principal pour structurer le contenu de la page -->
     <div class="platCollection">
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
-      <div class="plat"><button class="button"></button></div>
+      <h1>Desserts</h1>
+      <!-- Titre de la section principale indiquant que le contenu porte sur des desserts -->
+
+      <div class="flex-content">
+        <!-- Conteneur flexible pour afficher plusieurs desserts en ligne -->
+        <div class="image-content">
+          <div class="plat"><button id="button1" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+          <!-- Chaque bouton "Ajouter au panier" a un identifiant unique (id) pour être manipulé individuellement -->
+        </div>
+        <div class="image-content">
+          <div class="plat"><button id="button2" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+        <div class="image-content">
+          <div class="plat"><button id="button3" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+      </div>
+      <!-- Une première ligne de trois desserts -->
+
+      <div class="flex-content">
+        <div class="image-content">
+          <div class="plat"><button id="button4" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+        <div class="image-content">
+          <div class="plat"><button id="button5" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+        <div class="image-content">
+          <div class="plat"><button id="button6" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+      </div>
+      <!-- Une deuxième ligne de trois desserts -->
+
+      <div class="flex-content">
+        <div class="image-content">
+          <div class="plat"><button id="button7" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+        <div class="image-content">
+          <div class="plat"><button id="button8" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+        <div class="image-content">
+          <div class="plat"><button id="button9" class="buttonAddCarT"><img
+                src="../product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart">Add to
+              cart</button></div>
+        </div>
+      </div>
+      <!-- Une troisième ligne de trois desserts -->
     </div>
+
+    <div class="cart">
+      <!-- Conteneur pour le panier d'achat -->
+      <h3>Your cart(<span class="cartNumber"></span>)</h3>
+      <!-- Titre indiquant le nombre de produits dans le panier -->
+      <div class="default">
+        <img src="../product-list-with-cart-main/assets/images/illustration-empty-cart.svg" alt="Empty cart">
+        <p>Your cart empty will appear here.</p>
+      </div>
+    </div>
+    <!-- Conteneur pour le panier d'achat où seront probablement affichés les articles ajoutés -->
   </div>
-  
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">SINGO Yao Dieu Donné</a>.
+    <!-- Section d'attribution, pour les crédits du challenge et de l'auteur du code -->
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">SINGO
+      Yao Dieu Donné</a>.
+    <!-- Liens vers le site du challenge et un lien vers le profil de l'auteur (ici, pas encore configuré) -->
   </div>
 </body>
+
 </html>
