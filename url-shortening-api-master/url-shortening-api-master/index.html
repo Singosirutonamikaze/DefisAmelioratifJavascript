@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Balise d'en-tête contenant les métadonnées du document -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Spécifie l'encodage des caractères en UTF-8 pour une meilleure compatibilité des caractères -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configure l'affichage du site pour s'adapter aux différents appareils, en particulier pour mobile -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Lien vers une icône de site (favicon) qui apparaîtra dans l'onglet du navigateur -->
+
+  <title>Frontend Mentor | Product list with cart</title>
+  <!-- Titre de la page qui apparaîtra dans l'onglet du navigateur -->
+
+  <link rel="stylesheet" href="../url-shortening-api-master/css/index.css">
+  <link rel="stylesheet" href="../url-shortening-api-master/css/responsive.css">
+  <!-- Lien vers le fichier CSS pour le style et la mise en page principale du site -->
+
+  <script src="../product-list-with-cart-main/js/app.js"></script>
+  <!-- Lien vers le fichier JavaScript pour le comportement interactif du site -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <!-- Lien vers la police de caractères importée depuis Google Fonts -->
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      display: none;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <!-- Style en ligne pour la section "attribution" (les crédits), incluant la taille du texte et la couleur des liens -->
 </head>
+
 <body>
-    
-  
+  <main>
+    <header class="header">
+      <nav class="navigation">
+        <div class="left">
+          <h1>Shortly</h1>
+          <ul class="item">
+            <li class="list-item">Features</li>
+            <li class="list-item">Pricing</li>
+            <li class="list-item">Resources</li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="button1">Login</button>
+          <button class="button2">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+    <section class="sectionOne">
+      <div class="containerOne">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        <button><a href="#">Get Started</a></button>
+      </div>
+      <div class="containerTwo">
+        <img src="./images/illustration-working.svg" alt="illustration-working" />
+      </div>
+    </section>
+    <section class="sectionTwo">
+      <div class="searchDiv"></div>
+      <div class="advanced">
+        <h2>Advanced Statistics</h2>
+        <p>Track how your links are performing accross the web with <br>our advanced Statistics dashboard.</p>
+      </div>
+    </section>
+    <section class="sectionDivStarting">
+      <div id="container1"><span></span></div>
+      <div id="container2"><span></span></div>
+      <div id="container3"><span></span></div>
+    </section>
+    <footer>
+      <div class="parteOne"></div>
+      <div class="parteTwo"></div>
+    </footer>
+  </main>
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <!-- Section d'attribution, pour les crédits du challenge et de l'auteur du code -->
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">SINGO
+      Yao Dieu Donné</a>.
+    <!-- Liens vers le site du challenge et un lien vers le profil de l'auteur (ici, pas encore configuré) -->
   </div>
 </body>
+
 </html>
